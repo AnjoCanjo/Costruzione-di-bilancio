@@ -1,0 +1,25 @@
+﻿<mah:MetroWindow   
+	    x:Class="Costruzione_di_bilancio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Costruzione_di_bilancio"
+        mc:Ignorable="d"
+	    GlowBrush="{DynamicResource MahApps.Brushes.Accent}"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="456" Width="730" Loaded="MetroWindow_Loaded" HorizontalContentAlignment="Center">
+	<Grid>
+		<mah:Tile x:Name="tile_add_op" Content="Aggiungi operazione" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="285" Click="tile_add_op_Click"/>
+		<mah:Tile x:Name="tile_edit_op" Content="Modifica operazione" HorizontalAlignment="Left" Margin="295,5,0,0" VerticalAlignment="Top" Height="285" Width="140"/>
+		<mah:Tile x:Name="tile_delete_op" Content="Cancella operazione" HorizontalAlignment="Left" Margin="440,5,0,0" VerticalAlignment="Top" Width="140" Height="140"/>
+		<mah:Tile x:Name="tile_SP" Content="Stato patrimoniale" HorizontalAlignment="Left" Margin="5,150,0,0" VerticalAlignment="Top" Height="285" Width="140"/>
+		<mah:Tile x:Name="tile_CE" Content="Conto economico" Margin="150,150,440,0" VerticalAlignment="Top" Height="285" Width="140"/>
+		<mah:Tile x:Name="tile_example" Content="Apri esempio" HorizontalAlignment="Left" Margin="295,295,0,0" VerticalAlignment="Top" Height="140"/>
+		<mah:Tile x:Name="tile_edit_tax" Content="Modifica tassazioni" Margin="585,5,5,0" VerticalAlignment="Top" Width="140" Height="140" Click="tile_edit_tax_Click"/>
+		<mah:Tile x:Name="tile_reset" Content="Ripristina tutti i valori" HorizontalAlignment="Left" Margin="440,150,0,0" VerticalAlignment="Top" Height="285" Width="285"/>
+
+	</Grid>
+</mah:MetroWindow >
